@@ -144,6 +144,7 @@
                 + props.no_female + '</b><br /> female pop density/km^2 ' + Math.round(props.no_female/props.AREA*1000000)
                 + '</b><br /> area km^2 ' + (props.AREA/1000000).toFixed(1)
                 + '</b><br /> tings ' + Math.round(props.no_female * 0.005)
+                + '</b><br /> tings/km^2' + Math.round(props.no_female/props.AREA*1000000 * 0.005)
                 : 'Hover over a neighbourhood');
         };
 
