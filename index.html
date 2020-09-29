@@ -141,11 +141,10 @@
         info.update = function (props) {
             this._div.innerHTML = '<h4>Bangkok Districts</h4>' + (props ?
                 '<b>' + props.dname_e 
-                + '</b><br /> district ' 
+                + '</b><br /> district ' + props.dname
                 + '</b><br /> area km^2 ' + (props.AREA/1000000).toFixed(1)
-                + props.dname + '</b><br /> female pop ' 
-                + props.no_female + '</b><br /> female pop density/km^2 ' 
-                + Math.round(props.no_female/props.AREA*1000000)                
+                + '</b><br /> female pop ' + props.no_female 
+                + '</b><br /> female pop /km^2 ' + Math.round(props.no_female/props.AREA*1000000)
                 + '</b><br /> tings ' + Math.round(props.no_female * 0.005)
                 + '</b><br /> tings/km^2 ' + Math.round(props.no_female/props.AREA*1000000 * 0.005)
                 : 'Hover over a neighbourhood');
